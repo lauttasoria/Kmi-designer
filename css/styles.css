@@ -60,13 +60,16 @@ body.servicios{
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #f700ff;
+    font-weight: bold;
+    transition: none;
 }
 
 nav ul li a:hover{
-    color:#070707;
+    
     background-color:  #010101 ;
     border-radius: 20px 20px 20px 20px;
-    padding: 2px 10px;
+    padding: 2px 5px;
+    transition: none;
 }
 a{
     text-decoration: none;
@@ -93,6 +96,7 @@ a{
 .menu-button:focus{
     box-shadow: none;
 }
+
 
 /*main*/
 main.inicio{
@@ -168,14 +172,47 @@ h4{
     
 }
 .carousel {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
+    justify-items: center;
+    flex-direction: column;
 }
 .carousel:hover {
     width: 350px;
     height: auto;
+}
+
+
+@media screen and (min-width:768px){
+    .carousel {
+        width:400px;
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .carousel:hover {
+        width: 450px;
+        height: auto;
+    }
+}
+@media screen and (min-width:1024px){
+    .carousel {
+        width:500px;
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .carousel:hover {
+        width: 500px;
+        height: auto;
+    }
+
 }
 
 /*servicios*/
