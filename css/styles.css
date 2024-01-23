@@ -19,6 +19,7 @@ body.inicio{
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
 }
+
 body.catalogo{
     background-image: url(../img/fondoo.jpg);
     background-size: 100% 110%;
