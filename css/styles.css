@@ -116,9 +116,8 @@ a{
 main.inicio{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 50px;
-    justify-content: right;
+    align-items: center;
+    
 }
 .logo{
     max-width: 250px;
