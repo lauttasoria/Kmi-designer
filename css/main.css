@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*header*/
+header .header-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+header .header-inicio .nav-inicio {
+  color: #f700ff;
+  font-weight: bold;
+  transition: none;
+}
+header .header-inicio .nav-inicio:hover {
+  background-color: #010101;
+  border-radius: 20px 20px 20px 20px;
+  padding: 2px 5px;
+  transition: none;
+}
+header .header-inicio .nav-inicio nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+header .navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: #f700ff;
+  background-color: #f700ff;
+  border: #ffffff --bs-border-width solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+}
+header .menu-button {
+  border: 0;
+}
+header .menu-button:focus {
+  box-shadow: none;
+}
+
+/*main*/
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inicio .logo {
+  max-width: 250px;
+  margin-bottom: 20px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+.inicio .frase {
+  width: 350px;
+  height: 160px;
+  overflow: hidden;
+  cursor: default;
+  color: white;
+  font-size: 17px;
+  margin-right: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+.inicio div .bienvenida p {
+  color: rgb(255, 6, 193);
+  font-size: 35px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 769px) {
+  main.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px;
+    justify-content: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px;
+    justify-content: right;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

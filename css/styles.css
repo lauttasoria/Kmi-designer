@@ -90,10 +90,6 @@ a{
     text-transform: uppercase;
     font-weight: normal;
     color: rgb(255, 255, 255);
-    /*text-shadow: 1px  0px 0px black,
-                0px  1px 0px black,
-                -1px  0px 0px black,
-                0px -1px 0px black;*/
 }
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -117,7 +113,6 @@ main.inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .logo{
     max-width: 250px;
@@ -256,6 +251,8 @@ h4{
     align-items: center;
     max-width: 1500px;
     flex-wrap: wrap;/*me funciona bien para mobile pero no en el resto*/
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
 }
 @media screen and (min-width:768px){
     .contenedor-servicios{
