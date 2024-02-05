@@ -22,15 +22,19 @@
         justify-content: right;
     }
     /*servicios*/
-    main.contenedor-servicios{
+    .main-servicios{
+        .contenedor-servicios{
         width: 100%;
         display: grid;
         justify-content: center;
         align-items: center;
         max-width: 1500px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
+        margin: auto;
+        padding: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         flex-wrap: nowrap;
+        }
     }
     /*galeria*/
     .contenedor-grid{
@@ -111,15 +115,19 @@
         justify-content: right;
     }
     /*servicios*/
-    .contenedor-servicios{
+    .main-servicios{
+        .contenedor-servicios{
         width: 100%;
         display: grid;
         justify-content: center;
         align-items: center;
         max-width: 1500px;
-        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        padding: 50px;
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(1, auto);
         flex-wrap: nowrap;
+        }
     }
     /*galeria*/
     .contenedor-grid{

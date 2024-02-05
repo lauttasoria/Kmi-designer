@@ -114,8 +114,9 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
-  gap: 1rem;
-  margin: 1rem 3rem 3rem 3rem;
+  gap: 2rem;
+  margin: 3rem 3rem 3rem 3rem;
+  padding: 10px;
 }
 .main-servicios .contenedor-servicios .servicio {
   width: 100%;
@@ -134,7 +135,8 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 .main-servicios .contenedor-servicios .servicio img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-servicios .contenedor-servicios .servicio .servicio-texto {
   padding: 15px;
@@ -184,7 +186,8 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 .main-galeria .contenedor-grip img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*contacto*/
@@ -351,14 +354,16 @@ footer .contenedor-footer .contenedor-01 .copy {
     justify-content: right;
   }
   /*servicios*/
-  main.contenedor-servicios {
+  .main-servicios .contenedor-servicios {
     width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    margin: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     flex-wrap: nowrap;
   }
   /*galeria*/
@@ -423,13 +428,15 @@ footer .contenedor-footer .contenedor-01 .copy {
     justify-content: right;
   }
   /*servicios*/
-  .contenedor-servicios {
+  .main-servicios .contenedor-servicios {
     width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 50px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
     flex-wrap: nowrap;
   }
@@ -484,6 +491,4 @@ footer .contenedor-footer .contenedor-01 .copy {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
