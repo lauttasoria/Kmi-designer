@@ -15,7 +15,7 @@ body {
 }
 
 body.inicio {
-  background-image: url(../../img/fondo-de-pantalla.jpg);
+  background-image: url(../img/fondo-de-pantalla.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: rgb(39, 12, 83);
@@ -25,7 +25,7 @@ body.inicio {
 }
 
 body.contacto, .galeria, .servicios, .catalogo {
-  background-image: url(../../img/fondoo.jpg);
+  background-image: url(../img/fondoo.jpg);
   background-size: 100% 110%;
   background-position: center center;
   background-attachment: fixed;
@@ -66,7 +66,7 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   color: rgb(255, 255, 255);
 }
 
-/*main*/
+/*inicio*/
 .main-inicio {
   display: flex;
   flex-direction: column;
@@ -267,6 +267,7 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   margin: 0 0 1rem 0;
 }
 
+/*catalogo*/
 .main-catalogo h2 {
   color: rgb(255, 17, 164);
   text-align: center;
