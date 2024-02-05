@@ -1,14 +1,14 @@
 /*main*/
-.inicio{
+.main-inicio{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: first flex-end;
     .logo{
         max-width: 250px;
         margin-bottom: 20px;
         margin-right: 70px;
         margin-top: 30px;
-    }
+        }
     .frase{
         width: 350px;
         height: 160px;
@@ -20,18 +20,21 @@
         margin-top: 30px;
         text-align: center;
     }
-    div{
-        .bienvenida{
-            p{
-                color: rgb(255, 6, 193);
-                font-size: 35px;
-                border-radius: 10px;
-                font-weight: bold;
-                font-family: 'Poppins', sans-serif;
-                cursor: default;
-                margin-right: 70px;
-                margin-top: 30px;
-            }
+    .bienvenida{
+        p{
+            color: rgb(255, 6, 193);
+            font-size: 35px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            cursor: default;
+            margin-right: 70px;
+            margin-top: 30px;
         }
+        
     }
 }
+
+
+
+

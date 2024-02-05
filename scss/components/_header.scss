@@ -1,51 +1,45 @@
 //comentario en scss
 /*header*/
-header{
-    .header-inicio {
+
+    header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: first flex-start;
     padding: 15px;
-    
-    .nav-inicio {
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
         color: #f700ff;
         font-weight: bold;
-        transition: none;
+        
         &:hover{
             background-color:  #010101 ;
             border-radius: 20px 20px 20px 20px;
-            padding: 2px 5px;
-            transition: none;
-        }
-        nav{
-            ul{
-                li{
-                    
+            }
+        div .container-fluid{
+            .navbar-toggler {
+                padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+                font-size: var(--bs-navbar-toggler-font-size);
+                line-height: 1;
+                color: #f700ff;
+                background-color: #f700ff 0;
+                border: #ffffff(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+                border-radius: var(--bs-navbar-toggler-border-radius);
+                &:focus{
+                    box-shadow: none;
+                    }
+                }
+            div .menu{
+                ul{
+                    li{
                         a{
-                            text-decoration: none;
                             text-transform: uppercase;
+                            text-decoration: none;
                             font-weight: normal;
                             color: rgb(255, 255, 255);
+                            }
                         }
                     }
                 }
-            }   
+            }
         }
     }
-    .navbar-toggler {
-        padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-        font-size: var(--bs-navbar-toggler-font-size);
-        line-height: 1;
-        color: #f700ff;
-        background-color: #f700ff;
-        border: #ffffff(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-        border-radius: var(--bs-navbar-toggler-border-radius);
-    }
-    .menu-button{
-        border: 0;
-        &:focus{
-            box-shadow: none;
-        }
-        
-    }
-}
+    

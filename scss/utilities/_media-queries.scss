@@ -16,3 +16,27 @@
         justify-content: right;
     }
 }
+@media screen and (min-width:768px){
+    .contenedor-servicios{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+        grid-template-columns:1fr;
+    grid-template-rows: repeat(3);
+    flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width:1024px){
+    .contenedor-servicios{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+        grid-template-columns:3fr;
+    grid-template-rows: repeat(4, auto);
+    flex-wrap: nowrap;
+    }
+}

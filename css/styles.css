@@ -1,7 +1,9 @@
+/*
 *{
+    margin: 0;
     padding: 0px;
     box-sizing: border-box;
-}
+}*/
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ body.inicio{
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
 }
-
+/*
 @media screen and (max-width:769px) {
     body.inicio{
     background-image:none;
@@ -31,7 +33,7 @@ body.inicio{
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
     }
-}
+}*/
 
 body.catalogo{
     background-image: url(../img/fondoo.jpg);
@@ -66,19 +68,19 @@ body.servicios{
 /*index*/
 /*header*/
 
-.header-inicio {
+/*.header-inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-}
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+}*/
+/*.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #f700ff;
     font-weight: bold;
     transition: none;
-}
+}*/
 
-nav ul li a:hover{
+/*nav ul li a:hover{
     
     background-color:  #010101 ;
     border-radius: 20px 20px 20px 20px;
@@ -105,16 +107,16 @@ a{
 }
 .menu-button:focus{
     box-shadow: none;
-}
+}*/
 
 
 /*main*/
-main.inicio{
+/*main.inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.logo{
+}*/
+/*.logo{
     max-width: 250px;
     margin-bottom: 20px;
     margin-right: 70px;
@@ -140,7 +142,7 @@ main.inicio{
     cursor: default;
     margin-right: 70px;
     margin-top: 30px;
-}
+}*/
 
 @media screen and (min-width:769px) {
     main.inicio{
@@ -243,16 +245,15 @@ h4{
 }
 
 /*servicios*/
-
+/*
 .contenedor-servicios{
-    width: 100%;
-    display: flex;
+    
+    display: grid;
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    flex-wrap: wrap;/*me funciona bien para mobile pero no en el resto*/
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(2);
+    
+    
 }
 @media screen and (min-width:768px){
     .contenedor-servicios{
@@ -261,6 +262,8 @@ h4{
         justify-content: center;
         align-items: center;
         max-width: 1500px;
+        grid-template-columns:1fr;
+    grid-template-rows: repeat(3, auto);
     }
 }
 @media screen and (min-width:1024px){
@@ -270,6 +273,8 @@ h4{
         justify-content: center;
         align-items: center;
         max-width: 1500px;
+        grid-template-columns:1fr;
+    grid-template-rows: repeat(4, auto);
     }
 }
 
@@ -319,7 +324,7 @@ h4{
     background:  rgb(103, 2, 121);
     color: #8f798f;
 }
-
+*/
 
 /*galeria*/
 
@@ -438,105 +443,76 @@ h2{
 
 
 /*contacto*/
-main.section.contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
 .contendor-contacto{
-    display: grid;
-    grid-template-columns: repeat(2.50%);
-    padding: 20px;
-    gap: 10px;
-    width: 1000px;
-    
-}
-.box-info{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
-.box-info > h1{
+.titulo-logo{
     text-align: center;
-    letter-spacing: 5px;
+    font-size: 40px;
+}
+.contacto-wrapper{
+    box-shadow: 0 0 20px 0 rgba(75, 75, 75, 0.3);
+}
+.contacto-wrapper > *{
+    padding: 1em;
+}
+.contact-form{
+    background: #353535;
 }
 
-.datos {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-.datos > p {
-    font-size: 1rem;
+.contact-form form{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+.contact-form form p{
+    margin: 0;
+    padding: 2em;
 }
-.input-box{
-    position: relative;
+
+.contact-form form .block{
+    grid-column: 1 / 3 ;
 }
-.input-box > input{
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
     width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    outline: none;
-    background: #444344;
-    border: 3px solid transparent;
-    letter-spacing: 1px;
-    transition: .3s;
-    color: white;
-}
-
-.input-box > input:focus,
-.input-box > textarea:focus{
-    border-bottom: 3px solid #8f29fc;
-    animation: shake .2s;
-}
-
-.input-box > input::placeholder,
-.input-box > textarea::placeholder{
-    color: #a3a3a3;
-}
-
-
-.input-box > input:focus::placeholder,
-.input-box > textarea:focus::placeholder{
-    color: transparent;
-}
-
-
-.input-box > textarea{
-    width: 100%;
-    height: 130px;
-    padding: 0 10px;
-    outline: none;
-    background: #444344;
-    border: 3px solid transparent;
-    letter-spacing: 1px;
-    transition: .3s;
-    color: white;
-    padding: 10px;
-    outline: none;
-}
-form > button{
-    background:#e658ffa0;
-    color: #fff;
+    padding: .7em;
     border: none;
-    outline:none;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 10px;
+    background: none;
+    border-bottom: 1px solid #8f29fc;
+    outline: 0;
+    color: white;
 }
-form > button:hover{
-    background: #631670a0 ;
+.contact-form form button{
+    background: rgb(131, 39, 173);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: rgba(91, 23, 122, 0.815);
+    color: rgb(255, 4, 255);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contacto-info{
+    background: rgb(131, 39, 173);
+}
+.contacto-info h4,
+.contacto-info ul,
+.contacto-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.contacto-info ul{
+    list-style: none;
+    padding: 0;
 }

@@ -6,13 +6,17 @@
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 <!--Titulo-->
 <title>Kmi Designer | Contacto</title>
 <!--bootstraps-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 <!--CSS-->
 <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="contacto">
     
@@ -44,39 +48,56 @@
             </div>
             </nav>
     </header>
-    <main>
-        <section class="contacto" >
+    <main class="main-contacto">
+        
         <div class="contendor-contacto">
-            <div class="box-info">
-                <h2>CONTÁCTATE CON NOSOTROS</h2>
-                <!--<div class="datos">
-                    <p><i class="fa-solid fa-phone"></i>+1 408 numero</p>
-                    <p><i class="fa-solid fa-envelope"></i>correo electronico</p>
-                    <p><i class="fa-solid fa-location-dot"></i>direccion</p>
+            <h2 class="titulo-logo">CONTACTO</h2>
+            <div class="contacto-wrapper">
+                <div class="contact-form">
+                    <H3>Contactanos</H3>
+                    <form action="">
+                        <p>
+                            <label>Nombre"</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="telefono">
+                        </p>
+                        <p>
+                            <label>Asunto"</label>
+                            <input type="text" name="asunto">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
                 </div>
-                <div class="link">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>-->
+                <div class="contacto-info">
+                    <h4>Mas informacion</h4>
+                    <ul>
+                        <li><i class="fa-light fa-location-dot">Funes, Santa Fe</i></li>
+                        <li><i class="fa-light fa-phone">3413 929326</i></li>
+                        <li><i class="fa-light fa-envelope">kmi.nadal@gmail.com</i></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eveniet. Temporibus perspiciatis ducimus</p>
+                    <p>
+                        Kmidesigner.com
+                    </p>
+                </div>
+                
+            
             </div>
-            <form>
-                <div class="input-box">
-                    <input type="text" required placeholder="Nombre y Apellido">
-                </div>
-                <div class="input-box">
-                    <input type="email" required placeholder="Correo Electronico">
-                </div>
-                <div class="input-box">
-                    <input type="number" required placeholder="telefono">
-                </div>
-                <div class="input-box">
-                    <textarea cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-                <button type="submit">Enviar mensaje</button>
-            </form>
         </div>
-    </section>
+    
     </main>
     <footer>
         <div class="contenedor-footer">
