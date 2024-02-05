@@ -518,6 +518,8 @@ h2{
 }
 .contacto-info ul li{
     padding: .2em;
+    line-height: 30px ;
+    letter-spacing: 2px;
 }
 
 @media (min-width:730px){
