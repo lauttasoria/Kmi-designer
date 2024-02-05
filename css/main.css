@@ -189,15 +189,20 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 
 /*contacto*/
 .main-contacto .contenedor-contacto {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
   color: white;
 }
-.main-contacto .contenedor-contacto .titulo-logo {
+.main-contacto .contenedor-contacto h2 {
+  color: rgb(255, 17, 164);
   text-align: center;
-  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration: none;
+  margin: 40px 0px;
+  font-size: 36px;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper {
   box-shadow: 0 0 20px 5px rgba(161, 160, 160, 0.3);
@@ -207,21 +212,23 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form h3 {
   text-transform: none;
+  text-align: left;
+  margin: 5px;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form p {
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario {
   margin: 0;
   padding: 2em;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form p .block {
-  grid-column: 1/3;
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario .msj, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario .boton {
+  grid-column: 1/2;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form p input,
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form p textarea,
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form p button {
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario input,
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario textarea,
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button {
   width: 100%;
   padding: 0.7em;
   border: none;
@@ -230,39 +237,40 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   outline: 0;
   color: white;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form button {
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button {
   background: rgb(131, 39, 173);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form button:hover, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form button:focus {
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:hover, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:focus {
   background: rgba(91, 23, 122, 0.815);
   color: rgb(255, 4, 255);
   transition: background-color 1s ease-out;
   outline: 0;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info {
+.main-contacto .contenedor-contacto .contacto-info {
   background: rgb(131, 39, 173);
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info h4 {
+.main-contacto .contenedor-contacto .contacto-info h4 {
   text-align: center;
-  margin: 0 0 1rem 0;
+  margin: 5px;
+  padding: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul {
+.main-contacto .contenedor-contacto .contacto-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul li {
+.main-contacto .contenedor-contacto .contacto-info ul li {
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 0.2em;
   line-height: 30px;
   letter-spacing: 2px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info p {
+.main-contacto .contenedor-contacto .contacto-info p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
@@ -399,6 +407,11 @@ footer .contenedor-footer .contenedor-01 .copy {
     width: 450px;
     height: auto;
   }
+  /*contacto*/
+  .main-contacto .contenedor-contacto .contacto-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
 }
 @media screen and (min-width: 1024px) {
   /*index*/
@@ -465,6 +478,11 @@ footer .contenedor-footer .contenedor-01 .copy {
   .carousel:hover {
     width: 500px;
     height: auto;
+  }
+  /*contacto*/
+  .main-contacto .contenedor-contacto .contacto-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 }
 

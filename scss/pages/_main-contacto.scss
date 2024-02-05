@@ -1,14 +1,20 @@
 /*contacto*/
 .main-contacto{
     .contenedor-contacto{
-        max-width: 1400px;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         padding: 2em;
         color: white;
-        .titulo-logo{
+        h2{
+            color: rgb(255, 17, 164);
             text-align: center;
-            font-size: 40px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration: none;
+            margin:40px 0px;
+            font-size: 36px;
+            
         }
         .contacto-wrapper{
             box-shadow: 0 0 20px 5px rgba(161, 160, 160, 0.3);
@@ -16,15 +22,17 @@
                 background: #353535;
                 h3{
                     text-transform: none;
+                    text-align:left ;
+                    margin: 5px;
                 }
                 form{
                     display:grid ;
                     grid-template-columns: 1fr 1fr;
-                    p{
+                    .formulario{
                         margin: 0;
                         padding: 2em;
-                        .block{
-                            grid-column: 1 / 3 ;
+                        .msj, .boton{
+                            grid-column: 1 / 2;
                         }
                         input,
                         textarea,
@@ -37,33 +45,35 @@
                             outline: 0;
                             color: white;
                         }
-                    }
-                    button{
-                        background: rgb(131, 39, 173);
-                        border: 0;
-                        text-transform: uppercase;
-                        padding: 1em;
-                        &:hover,
-                        &:focus{
-                            background: rgba(91, 23, 122, 0.815);
-                            color: rgb(255, 4, 255);
-                            transition: background-color 1s ease-out;
-                            outline: 0;
+                        button{
+                            background: rgb(131, 39, 173);
+                            border: 0;
+                            text-transform: uppercase;
+                            padding: 1em;
+                            &:hover,
+                            &:focus{
+                                background: rgba(91, 23, 122, 0.815);
+                                color: rgb(255, 4, 255);
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
                         }
                     }
                 }
             }
+        }
             .contacto-info{
                 background: rgb(131, 39, 173);
                 h4{
                     text-align: center;
-                    margin: 0 0 1rem 0;
+                    margin: 5px;
+                    padding: 10px;
                 }
                 ul{
                     text-align: center;
                     margin: 0 0 1rem 0;
                     list-style: none;
-                    padding: 0;
+                    padding: 10px;
                     li{
                         text-align: center;
                         margin: 0 0 1rem 0;
@@ -79,4 +89,3 @@
             }
         }
     }
-}

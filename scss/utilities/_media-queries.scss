@@ -89,6 +89,16 @@
     }
 }
 
+/*contacto*/
+.main-contacto{
+    .contenedor-contacto{
+        .contacto-wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+}
+
 }
 
 @media screen and (min-width:1024px) {
@@ -170,4 +180,13 @@
         height: auto;
     }
 }
+/*contacto*/
+.main-contacto{
+    .contenedor-contacto{
+        .contacto-wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            }
+        }
+    }
 }
