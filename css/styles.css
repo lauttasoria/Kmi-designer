@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }*/
+/*
 body{
     margin: 0;
     padding: 0;
@@ -11,9 +12,9 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+}*/
 
-body.inicio{
+/*body.inicio{
     background-image: url(../img/fondo-de-pantalla.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -21,7 +22,7 @@ body.inicio{
     background-position: center;
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
-}
+}*/
 /*
 @media screen and (max-width:769px) {
     body.inicio{
@@ -34,7 +35,7 @@ body.inicio{
     font-family:'Poppins', sans-serif;
     }
 }*/
-
+/*
 body.catalogo{
     background-image: url(../img/fondoo.jpg);
     background-size: 100% 110%;
@@ -49,20 +50,21 @@ body.galeria{
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
 }
-body.contacto{
+/*body.contacto{
     background-image: url(../img/fondoo.jpg);
     background-size: 100% 110%;
     background-position: center center;
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
-}
+}*/
+/*
 body.servicios{
     background-image: url(../img/fondoo.jpg);
     background-size: 100% 110%;
     background-position: center center;
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
-}
+}*/
 
 
 /*index*/
@@ -143,7 +145,7 @@ a{
     margin-right: 70px;
     margin-top: 30px;
 }*/
-
+/*
 @media screen and (min-width:769px) {
     main.inicio{
         display: flex;
@@ -161,9 +163,10 @@ a{
         padding: 50px;
         justify-content: right;
     }
-}
+}*/
 
 /*footer*/
+/*
 footer{
     background-color: #8f29fc;
     padding: 0;
@@ -191,14 +194,13 @@ footer .copy{
 .redes-sociales i{
     font-size: 25px;
     padding: 0 20px;
-}
+}*/
 
 
 /*catalogo*/
-h4{
+/*h4{
     font-size: 20px;
     text-align: center;
-    
 }
 .carousel {
     width: 300px;
@@ -211,9 +213,9 @@ h4{
 .carousel:hover {
     width: 350px;
     height: auto;
-}
+}*/
 
-
+/*
 @media screen and (min-width:768px){
     .carousel {
         width:400px;
@@ -227,8 +229,8 @@ h4{
         width: 450px;
         height: auto;
     }
-}
-@media screen and (min-width:1024px){
+}*/
+/*@media screen and (min-width:1024px){
     .carousel {
         width:500px;
         height: auto;
@@ -242,7 +244,7 @@ h4{
         height: auto;
     }
 
-}
+}*/
 
 /*servicios*/
 /*
@@ -327,7 +329,7 @@ h4{
 */
 
 /*galeria*/
-
+/*
 h2{
     color: rgb(255, 17, 164);
     text-align: center;
@@ -348,9 +350,9 @@ h2{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+}*/
 
-
+/*
 @media (min-width:768px){
     .contenedor-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -394,8 +396,8 @@ h2{
 .img-9{
     grid-area: img9;
 }
-}
-
+}*/
+/*
 @media (min-width:1024px){
     .contenedor-grid{
         grid-template-columns: repeat(3, 1fr);
@@ -440,10 +442,10 @@ h2{
     grid-area: img9;
 }
 }
-
+*/
 
 /*contacto*/
-.contendor-contacto{
+/*.contendor-contacto{
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -501,8 +503,8 @@ h2{
     color: rgb(255, 4, 255);
     transition: background-color 1s ease-out;
     outline: 0;
-}
-
+}*/
+/*
 .contacto-info{
     background: rgb(131, 39, 173);
 }
@@ -539,4 +541,4 @@ h2{
         padding: 1em;
         text-align: left;
     }
-}
+}*/

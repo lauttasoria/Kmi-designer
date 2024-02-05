@@ -6,3 +6,19 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+body.inicio{
+    background-image: url(../../img/fondo-de-pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: rgb(39,12,83);
+    background-position: center;
+    background-attachment: fixed;
+    font-family:'Poppins', sans-serif;
+}
+body.contacto,.galeria,.servicios,.catalogo{
+    background-image: url(../../img/fondoo.jpg);
+    background-size: 100% 110%;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family:'Poppins', sans-serif;
+}

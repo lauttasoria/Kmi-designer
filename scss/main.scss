@@ -3,8 +3,13 @@
 
 @import "components/header";
 
+
 @import "pages/main-inicio";
 @import "pages/main-servicios";
-@import "pages/main-contacto";
 @import "pages/main-galeria";
+@import "pages/main-contacto";
 @import "pages/main-catalogo";
+
+@import "components/footer";
+
+@import "utilities/media-queries";
