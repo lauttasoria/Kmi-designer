@@ -131,8 +131,8 @@
     }
     /*galeria*/
     .contenedor-grid{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 30vh);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, 30vh);
         grid-template-areas: 
         "img1 img4 img4"
         "img1 img3 img3"
@@ -143,35 +143,34 @@
         "img7 img7 img7"
         "img8 img10 img10"
         ;
-    }
-
-.img-1{
-    grid-area: img1;
-}
-.img-2{
-    grid-area: img2;
-}
-.img-3{
-    grid-area: img3;
-}
-.img-4{
-    grid-area: img4;
-}
-.img-5{
-    grid-area: img5;
-}
-.img-6{
-    grid-area: img6;
-}
-.img-7{
-    grid-area: img7;
-}
-.img-8{
-    grid-area: img8;
-}
-.img-9{
-    grid-area: img9;
-}
+            .img-1{
+                grid-area: img1;
+            }
+            .img-2{
+                grid-area: img2;
+            }
+            .img-3{
+                grid-area: img3;
+            }
+            .img-4{
+                grid-area: img4;
+            }
+            .img-5{
+                grid-area: img5;
+            }
+            .img-6{
+                grid-area: img6;
+            }
+            .img-7{
+                grid-area: img7;
+            }
+            .img-8{
+                grid-area: img8;
+            }
+            .img-9{
+                grid-area: img9;
+            }
+        }
 
 
 /*catalogo*/

@@ -166,30 +166,6 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   color: #8f798f;
 }
 
-/*galeria*/
-.main-galeria h2 {
-  color: rgb(255, 17, 164);
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration: none;
-  margin: 40px 0px;
-  font-size: 36px;
-}
-.main-galeria .contenedor-grip {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(1, auto);
-  margin: 1rem 3rem 3rem 3rem;
-  gap: 1rem;
-}
-.main-galeria .contenedor-grip img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /*contacto*/
 .main-contacto .contenedor-contacto {
   max-width: 1200px;
@@ -303,6 +279,44 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 .main-catalogo .carousel h4 {
   font-size: 20px;
   text-align: center;
+}
+
+/*galeria*/
+.main-galeria h2 {
+  color: rgb(255, 17, 164);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration: none;
+  margin: 40px 0px;
+  font-size: 36px;
+}
+.main-galeria .contenedor-grip {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+.main-galeria .contenedor-grip .img-box:nth-child(1) {
+  grid-column-start: span 2;
+}
+.main-galeria .contenedor-grip .img-box:nth-child(4) {
+  grid-column-start: span 2;
+}
+.main-galeria .contenedor-grip .img-box figure {
+  width: 100%;
+  height: 100%;
+}
+.main-galeria .contenedor-grip .img-box figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -442,35 +456,35 @@ footer .contenedor-footer .contenedor-01 .copy {
   }
   /*galeria*/
   .contenedor-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 30vh);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 30vh);
     grid-template-areas: "img1 img4 img4" "img1 img3 img3" "img2 img2 img2" "img2 img2 img2" "img5 img5 img6" "img5 img9 img9" "img7 img7 img7" "img8 img10 img10";
   }
-  .img-1 {
+  .contenedor-grid .img-1 {
     grid-area: img1;
   }
-  .img-2 {
+  .contenedor-grid .img-2 {
     grid-area: img2;
   }
-  .img-3 {
+  .contenedor-grid .img-3 {
     grid-area: img3;
   }
-  .img-4 {
+  .contenedor-grid .img-4 {
     grid-area: img4;
   }
-  .img-5 {
+  .contenedor-grid .img-5 {
     grid-area: img5;
   }
-  .img-6 {
+  .contenedor-grid .img-6 {
     grid-area: img6;
   }
-  .img-7 {
+  .contenedor-grid .img-7 {
     grid-area: img7;
   }
-  .img-8 {
+  .contenedor-grid .img-8 {
     grid-area: img8;
   }
-  .img-9 {
+  .contenedor-grid .img-9 {
     grid-area: img9;
   }
   /*catalogo*/
