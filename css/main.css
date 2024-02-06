@@ -32,6 +32,12 @@ body.contacto, .galeria, .servicios, .catalogo {
   font-family: "Poppins", sans-serif;
 }
 
+.main-contacto .contenedor-contacto .contacto-wrapper .contact-form h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
 /*header*/
 header {
   display: flex;
@@ -197,11 +203,6 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form {
   background: #353535;
-}
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form h3 {
-  text-transform: none;
-  text-align: left;
-  margin: 5px;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form {
   display: grid;

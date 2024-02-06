@@ -21,9 +21,7 @@
             .contact-form{
                 background: #353535;
                 h3{
-                    text-transform: none;
-                    text-align:left ;
-                    margin: 5px;
+                    @extend %estilos;
                 }
                 form{
                     display:grid ;
