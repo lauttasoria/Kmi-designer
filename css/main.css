@@ -52,8 +52,8 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navb
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: #ffffff;
-  background-color: #f700ff 0;
-  border: #ffffff solid 1px;
+  background-color: #f700ff;
+  border: 1px solid white;
   border-radius: var(--bs-navbar-toggler-border-radius);
 }
 header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navbar-toggler-icon:focus, header .navbar-nav .nav-link.active div .container-fluid .menu-button .menu-icon:focus, header .navbar-nav .nav-link.show div .container-fluid .menu-button span .navbar-toggler-icon:focus, header .navbar-nav .nav-link.show div .container-fluid .menu-button .menu-icon:focus {
@@ -90,7 +90,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   text-align: center;
 }
 .main-inicio .contenedor-inicio .bienvenida p {
-  color: rgb(255, 6, 193);
+  color: rgb(255, 17, 164);
   font-size: 35px;
   border-radius: 10px;
   font-weight: bold;
@@ -123,7 +123,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   height: 490px;
   border-radius: 6px;
   overflow: hidden;
-  background-color: rgb(200, 26, 235);
+  background-color: rgb(255, 17, 164);
   box-shadow: 0px 1px 10px rgba(170, 170, 170, 0.2);
   cursor: default;
   transition: all 400ms ease;
@@ -156,7 +156,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   padding: 5px;
   margin-top: 10px;
   color: rgb(103, 2, 121);
-  border: 1px solid rgb(103, 2, 121);
+  border: 1px solid rgb(47, 46, 48);
   border-radius: 4px;
   transition: all 400ms ease;
 }
@@ -166,21 +166,21 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 
 /*contacto*/
+.main-contacto h2 {
+  color: rgb(255, 17, 164);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration: none;
+  margin: 40px 10px;
+  font-size: 36px;
+}
 .main-contacto .contenedor-contacto {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
   color: white;
-}
-.main-contacto .contenedor-contacto h2 {
-  color: rgb(255, 17, 164);
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration: none;
-  margin: 40px 0px;
-  font-size: 36px;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper {
   box-shadow: 0 0 20px 5px rgba(161, 160, 160, 0.3);
@@ -216,19 +216,19 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: white;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button {
-  background: rgb(131, 39, 173);
+  background: rgb(255, 17, 164);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:hover, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:focus {
-  background: rgba(91, 23, 122, 0.815);
-  color: rgb(255, 4, 255);
+  background: rgb(255, 17, 164);
+  color: #000000;
   transition: background-color 1s ease-out;
   outline: 0;
 }
 .main-contacto .contenedor-contacto .contacto-info {
-  background: rgb(131, 39, 173);
+  background: rgb(255, 17, 164);
 }
 .main-contacto .contenedor-contacto .contacto-info h4 {
   text-align: center;

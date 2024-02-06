@@ -1,7 +1,7 @@
 /*servicios*/
 .main-servicios{
     h2{
-        color: rgb(255, 17, 164);
+        color: $color-principal;
         text-align: center;
         text-transform: uppercase;
         text-decoration: underline;
@@ -21,7 +21,7 @@
             height: 490px;
             border-radius: 6px;
             overflow: hidden;
-            background-color: rgb(200, 26, 235);
+            background-color: $color-principal;
             box-shadow: 0px 1px 10px rgba(170, 170, 170, 0.2);
             cursor: default;
             transition: all 400ms ease;
@@ -51,8 +51,8 @@
                     display: inline-block;
                     padding: 5px;                    
                     margin-top: 10px;
-                    color: rgb(103, 2, 121) ;
-                    border: 1px solid  rgb(103, 2, 121);
+                    color: map-get($map: $boton-primario, $key: color-primario) ;
+                    border: map-get($map: $boton-primario, $key: border-primario);
                     border-radius: 4px;
                     transition: all 400ms ease;
                     &:hover{

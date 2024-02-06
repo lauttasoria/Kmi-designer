@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family:'Poppins', sans-serif;
+    font-family:$letra-general;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,12 +13,12 @@ body.inicio{
     background-color: rgb(39,12,83);
     background-position: right;
     background-attachment: fixed;
-    font-family:'Poppins', sans-serif;
+    font-family:$letra-general;
 }
 body.contacto,.galeria,.servicios,.catalogo{
     background-image: url(../img/fondoo.jpg);
     background-size: 100% 110%;
     background-position: center center;
     background-attachment: fixed;
-    font-family:'Poppins', sans-serif;
+    font-family:$letra-general;
 }
