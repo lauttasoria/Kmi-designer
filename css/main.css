@@ -260,7 +260,7 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration: none;
-  margin: 40px 0px;
+  margin: 40px 10px;
   font-size: 36px;
 }
 .main-catalogo .carousel {
@@ -278,6 +278,8 @@ header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, head
 .main-catalogo .carousel h4 {
   font-size: 20px;
   text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 40px 10px;
 }
 
 /*galeria*/
@@ -436,7 +438,7 @@ footer .contenedor-footer .contenedor-01 .copy {
     object-fit: cover;
   }
   /*catalogo*/
-  .carousel {
+  .main-catalogo .carousel {
     width: 400px;
     height: auto;
     margin: 50px auto 0;
@@ -444,7 +446,7 @@ footer .contenedor-footer .contenedor-01 .copy {
     justify-items: center;
     flex-direction: column;
   }
-  .carousel:hover {
+  .main-catalogo .carousel:hover {
     width: 450px;
     height: auto;
   }
@@ -519,7 +521,7 @@ footer .contenedor-footer .contenedor-01 .copy {
     object-fit: cover;
   }
   /*catalogo*/
-  .carousel {
+  .main-catalogo .carousel {
     width: 500px;
     height: auto;
     margin: 50px auto 0;
@@ -527,8 +529,8 @@ footer .contenedor-footer .contenedor-01 .copy {
     justify-items: center;
     flex-direction: column;
   }
-  .carousel:hover {
-    width: 500px;
+  .main-catalogo .carousel:hover {
+    width: 550px;
     height: auto;
   }
   /*contacto*/
