@@ -105,10 +105,15 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: rgb(255, 17, 164);
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
   text-decoration: none;
-  margin: 40px 0px;
+  margin: 40px 10px;
   font-size: 36px;
+  /*color: $color-principal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:40px 0px;
+  font-size: 36px;*/
 }
 .main-servicios .contenedor-servicios {
   display: grid;
@@ -170,10 +175,15 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: rgb(255, 17, 164);
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
   text-decoration: none;
   margin: 40px 10px;
   font-size: 36px;
+  /*color: $color-principal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:40px 0px;
+  font-size: 36px;*/
 }
 .main-contacto .contenedor-contacto {
   max-width: 1200px;
@@ -222,7 +232,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   padding: 1em;
 }
 .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:hover, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:focus {
-  background: rgb(255, 17, 164);
+  background: #8f29fc;
   color: #000000;
   transition: background-color 1s ease-out;
   outline: 0;
@@ -258,10 +268,15 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: rgb(255, 17, 164);
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
   text-decoration: none;
   margin: 40px 10px;
   font-size: 36px;
+  /*color: $color-principal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:40px 0px;
+  font-size: 36px;*/
 }
 .main-catalogo .carousel {
   width: 300px;
@@ -287,10 +302,15 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: rgb(255, 17, 164);
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
   text-decoration: none;
-  margin: 40px 0px;
+  margin: 40px 10px;
   font-size: 36px;
+  /*color: $color-principal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:40px 10px;
+  font-size: 36px;*/
 }
 .main-galeria .contenedor-grid {
   width: 100%;

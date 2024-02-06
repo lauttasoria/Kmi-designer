@@ -1,13 +1,13 @@
 /*galeria*/
 .main-galeria{
     h2{
-        color: $color-principal;
+        @include titulo(center, uppercase, none, 40px 10px, 36px);
+        /*color: $color-principal;
         text-align: center;
         text-transform: uppercase;
-        text-decoration: underline;
         text-decoration: none;
-        margin:40px 0px;
-        font-size: 36px;
+        margin:40px 10px;
+        font-size: 36px;*/
     }
     .contenedor-grid{
         width: 100%;

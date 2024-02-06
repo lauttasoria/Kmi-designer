@@ -1,0 +1,8 @@
+@mixin titulo($text-align, $text-transform, $text-decoration,$margin, $font-size){
+    color: $color-principal;
+    text-align: $text-align;
+    text-transform: $text-transform;
+    text-decoration: $text-decoration;
+    margin:$margin;
+    font-size: $font-size;
+}

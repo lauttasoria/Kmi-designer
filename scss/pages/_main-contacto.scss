@@ -1,13 +1,13 @@
 /*contacto*/
 .main-contacto{
     h2{
-        color: $color-principal;
+        @include titulo(center, uppercase, none, 40px 10px, 36px);
+        /*color: $color-principal;
         text-align: center;
         text-transform: uppercase;
-        text-decoration: underline;
         text-decoration: none;
-        margin:40px 10px;
-        font-size: 36px;
+        margin:40px 0px;
+        font-size: 36px;*/
     }
     .contenedor-contacto{
         max-width: 1200px;
@@ -52,7 +52,7 @@
                             padding: 1em;
                             &:hover,
                             &:focus{
-                                background: $color-principal;
+                                background: nth($list: $colores, $n: 3);
                                 color: nth($list: $colores, $n: 4);
                                 transition: background-color 1s ease-out;
                                 outline: 0;
