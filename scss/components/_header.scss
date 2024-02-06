@@ -11,30 +11,32 @@
         font-weight: bold;
         
         &:hover{
-            background-color:  #010101 ;
+            background-color:  #414040 ;
             border-radius: 20px 20px 20px 20px;
             }
         div .container-fluid{
-            .navbar-toggler {
-                padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-                font-size: var(--bs-navbar-toggler-font-size);
-                line-height: 1;
-                color: #f700ff;
-                background-color: #f700ff 0;
-                border: #ffffff(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-                border-radius: var(--bs-navbar-toggler-border-radius);
-                &:focus{
-                    box-shadow: none;
+            .menu-button{
+                span .navbar-toggler-icon, .menu-icon {
+                    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+                    font-size: var(--bs-navbar-toggler-font-size);
+                    line-height: 1;
+                    color: #ffffff;
+                    background-color: #f700ff 0;
+                    border: #ffffff solid 1px;
+                    border-radius: var(--bs-navbar-toggler-border-radius);
+                    &:focus{
+                        box-shadow: #f700ff;
+                        }
                     }
-                }
-            div .menu{
-                ul{
-                    li{
-                        a{
-                            text-transform: uppercase;
-                            text-decoration: none;
-                            font-weight: normal;
-                            color: rgb(255, 255, 255);
+                div .menu{
+                    ul{
+                        li{
+                            a{
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                font-weight: normal;
+                                color: rgb(255, 255, 255);
+                                }
                             }
                         }
                     }

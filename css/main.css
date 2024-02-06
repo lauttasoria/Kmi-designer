@@ -44,22 +44,22 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link.show {
   font-weight: bold;
 }
 header .navbar-nav .nav-link.active:hover, header .navbar-nav .nav-link.show:hover {
-  background-color: #010101;
+  background-color: #414040;
   border-radius: 20px 20px 20px 20px;
 }
-header .navbar-nav .nav-link.active div .container-fluid .navbar-toggler, header .navbar-nav .nav-link.show div .container-fluid .navbar-toggler {
+header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.active div .container-fluid .menu-button .menu-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button .menu-icon {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: #f700ff;
+  color: #ffffff;
   background-color: #f700ff 0;
-  border: #ffffff --bs-border-width solid var(--bs-navbar-toggler-border-color);
+  border: #ffffff solid 1px;
   border-radius: var(--bs-navbar-toggler-border-radius);
 }
-header .navbar-nav .nav-link.active div .container-fluid .navbar-toggler:focus, header .navbar-nav .nav-link.show div .container-fluid .navbar-toggler:focus {
-  box-shadow: none;
+header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navbar-toggler-icon:focus, header .navbar-nav .nav-link.active div .container-fluid .menu-button .menu-icon:focus, header .navbar-nav .nav-link.show div .container-fluid .menu-button span .navbar-toggler-icon:focus, header .navbar-nav .nav-link.show div .container-fluid .menu-button .menu-icon:focus {
+  box-shadow: #f700ff;
 }
-header .navbar-nav .nav-link.active div .container-fluid div .menu ul li a, header .navbar-nav .nav-link.show div .container-fluid div .menu ul li a {
+header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu ul li a, header .navbar-nav .nav-link.show div .container-fluid .menu-button div .menu ul li a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: normal;
