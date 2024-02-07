@@ -47,11 +47,13 @@ header {
 }
 header .navbar-nav .nav-link.active, header .navbar-nav .nav-link.show {
   color: #f700ff;
-  font-weight: bold;
+  font-weight: lighter;
 }
 header .navbar-nav .nav-link.active:hover, header .navbar-nav .nav-link.show:hover {
-  background-color: #414040;
-  border-radius: 20px 20px 20px 20px;
+  background-color: #fdfbfb;
+  border-radius: 3rem;
+  transform: none;
+  transition: none;
 }
 header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.active div .container-fluid .menu-button .menu-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button .menu-icon {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -292,7 +294,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   width: 350px;
   height: auto;
 }
-.main-catalogo .carousel h4 {
+.main-catalogo .carousel h3 {
   font-size: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -357,29 +359,36 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 
 footer {
-  background-color: #8f29fc;
+  background-color: #270c53;
+  background-image: linear-gradient(180deg, #270c53 0%, #bb539d 100%);
   padding: 0;
   text-align: center;
   margin-top: auto;
   height: 100px;
 }
 footer .contenedor-footer .titulo-seccion {
-  color: black;
+  color: rgb(177, 172, 172);
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 15px;
 }
-footer .contenedor-footer .redes-sociales {
+footer .redes-sociales {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
-footer .contenedor-footer .redes-sociales a i {
+footer .redes-sociales a i {
+  font-size: 30px;
+  padding: 0 20px;
+  color: rgb(177, 172, 172);
+}
+footer .redes-sociales a i:hover {
+  color: #270c53;
+}
+footer .contenedor-01 p .final {
   font-size: 25px;
   padding: 0 20px;
-}
-footer .contenedor-footer .contenedor-01 .copy {
-  font-size: 25px;
-  padding: 0 20px;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 768px) {

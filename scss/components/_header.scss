@@ -8,11 +8,13 @@
     padding: 15px;
     .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
         color: #f700ff;
-        font-weight: bold;
+        font-weight:lighter;
         
         &:hover{
-            background-color:  #414040 ;
-            border-radius: 20px 20px 20px 20px;
+            background-color:  #fdfbfb;
+            border-radius: 3rem;
+            transform: none;
+            transition: none;
             }
         div .container-fluid{
             .menu-button{
