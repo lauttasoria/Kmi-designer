@@ -39,12 +39,13 @@
                 text-align: center;
                 p{
                     line-height: 1.5;
-                    color: #310931;
+                    color: #ffffff;
                 }
                 h3{
                     font-weight: 400;
                     margin-bottom: 15px;
                     font-family: 'Poppins', sans-serif;
+                    color: #ffffff;
                 }
                 a{
                     text-decoration: none;
@@ -57,7 +58,7 @@
                     transition: all 400ms ease;
                     &:hover{
                         background:  rgb(103, 2, 121);
-                        color: #8f798f;
+                        color: #ffffff;
                     }
                 }
             }
