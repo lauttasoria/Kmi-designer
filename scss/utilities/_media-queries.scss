@@ -181,6 +181,46 @@
                 }
             }
         }
+        h1 {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 5px;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            text-align: left;
+        }
+        .contenedor-cuadro{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 2rem;
+            margin: 20px;
+            padding: 15px;
+            .iconos{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                height: 100%;
+                border-radius: 6px;
+                border: 3px solid #ff0ce3;
+                overflow: hidden;
+                background-color: transparent;
+                align-items: center;
+                img{
+                    margin: 10px;
+                    width: 90px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                h3{
+                    padding: 5px;
+                    margin-top: 5px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ffffff;
+                    font-size: 15px;
+                }
+            }
+        }
     }
     /*servicios*/
     .main-servicios{
