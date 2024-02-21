@@ -58,8 +58,8 @@ header .navbar-nav .nav-link.active:hover, header .navbar-nav .nav-link.show:hov
 header .navbar-nav .nav-link.active div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.active div .container-fluid .menu-button .menu-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button span .navbar-toggler-icon, header .navbar-nav .nav-link.show div .container-fluid .menu-button .menu-icon {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
-  color: #ffffff;
+  line-height: 2;
+  color: #f7f7f7;
   background-color: #f700ff;
   border: 1px solid white;
   border-radius: var(--bs-navbar-toggler-border-radius);
@@ -126,12 +126,13 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 .main-servicios .contenedor-servicios {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
   gap: 2rem;
-  margin: 3rem 3rem 3rem 3rem;
-  padding: 10px;
+  margin: 3rem;
+  padding: 15px;
 }
 .main-servicios .contenedor-servicios .servicio {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 490px;
   border-radius: 6px;
@@ -139,7 +140,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   background-color: rgb(148, 77, 193);
   box-shadow: 0px 1px 10px rgba(170, 170, 170, 0.2);
   cursor: default;
-  transition: all 400ms ease;
+  transition: all 500ms ease;
 }
 .main-servicios .contenedor-servicios .servicio:hover {
   box-shadow: 5px 5px 20px rgba(170, 170, 170, 0.6);
@@ -161,14 +162,16 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 .main-servicios .contenedor-servicios .servicio .servicio-texto h3 {
   font-weight: 400;
   margin-bottom: 15px;
+  margin-top: auto;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
 .main-servicios .contenedor-servicios .servicio .servicio-texto a {
   text-decoration: none;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
+  align-items: end;
   color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.479);
   border-radius: 4px;
@@ -453,10 +456,17 @@ footer .contenedor-01 p .final {
     align-items: center;
     max-width: 1500px;
     margin: auto;
-    padding: 50px;
+    padding: 100px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     flex-wrap: nowrap;
+  }
+  .main-servicios .contenedor-servicios .servicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios .contenedor-servicios .servicio-texto {
+    margin-top: auto;
   }
   /*galeria*/
   .main-galeria .contenedor-grid {
@@ -536,7 +546,7 @@ footer .contenedor-01 p .final {
     align-items: center;
     max-width: 1500px;
     margin: auto;
-    padding: 50px;
+    padding: 10px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
     flex-wrap: nowrap;

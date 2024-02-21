@@ -66,11 +66,19 @@
         align-items: center;
         max-width: 1500px;
         margin: auto;
-        padding: 50px;
+        padding: 100px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         flex-wrap: nowrap;
+        .servicio{
+            display: flex;
+            flex-direction: column;
         }
+        .servicio-texto {
+            margin-top: auto;
+        }
+        }
+    
     }
     /*galeria*/
     .main-galeria{
@@ -165,11 +173,11 @@
         align-items: center;
         max-width: 1500px;
         margin: auto;
-        padding: 50px;
+        padding: 10px;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(1, auto);
-        flex-wrap: nowrap;
-        }
+        flex-wrap: nowrap;  
+        }      
     }
     /*galeria*/
     .main-galeria{
