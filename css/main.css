@@ -15,7 +15,7 @@ body {
 }
 
 body.inicio {
-  background-image: url(../img/fondo-de-pantalla.jpg);
+  background-image: url(../img/fondoo.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: rgb(39, 12, 83);
@@ -81,10 +81,11 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   align-items: flex-end;
 }
 .main-inicio .contenedor-inicio .logo {
-  max-width: 200px;
+  max-width: 320px;
   margin-bottom: 20px;
-  margin-right: 70px;
-  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 .main-inicio .contenedor-inicio .frase {
   width: 350px;
@@ -93,18 +94,20 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   cursor: default;
   color: white;
   font-size: 17px;
-  margin-right: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 30px;
   text-align: center;
 }
 .main-inicio .contenedor-inicio .bienvenida h1 {
   color: rgb(148, 77, 193);
-  font-size: 35px;
+  font-size: 40px;
   border-radius: 10px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   cursor: default;
-  margin-right: 70px;
+  margin-right: 3rem;
+  margin-bottom: 30px;
   margin-top: 30px;
 }
 
@@ -245,28 +248,29 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   transition: background-color 1s ease-out;
   outline: 0;
 }
-.main-contacto .contenedor-contacto .contacto-info {
+.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info {
   background: rgb(148, 77, 193);
 }
-.main-contacto .contenedor-contacto .contacto-info h4 {
+.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info h4 {
   text-align: center;
   margin: 5px;
   padding: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-info ul {
+.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
   list-style: none;
   padding: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-info ul li {
+.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul li {
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 0.2em;
   line-height: 30px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
-.main-contacto .contenedor-contacto .contacto-info p {
+.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
@@ -396,24 +400,6 @@ footer .contenedor-01 p .final {
   color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 768px) {
-  body.inicio {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: rgb(39, 12, 83);
-    background-position: center;
-    justify-content: center;
-    align-content: center;
-    background-attachment: fixed;
-    font-family: "Poppins", sans-serif;
-  }
-  .main-inicio .contenedor-inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 768px) {
   /*index*/
   .main.inicio {
@@ -539,6 +525,18 @@ footer .contenedor-01 p .final {
     justify-items: end;
     align-items: end;
     padding: 50px;
+    margin-right: 50px;
+  }
+  .main.inicio .contenedor-inicio .bienvenida h1 {
+    color: rgb(148, 77, 193);
+    font-size: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    cursor: default;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
   /*servicios*/
   .main-servicios .contenedor-servicios {

@@ -59,7 +59,6 @@
                     }
                 }
             }
-        }
             .contacto-info{
                 background: $color-principal;
                 h4{
@@ -77,7 +76,8 @@
                         margin: 0 0 1rem 0;
                         padding: .2em;
                         line-height: 30px ;
-                        letter-spacing: 2px;
+                        font-size:13px;
+                        letter-spacing: 1px;
                     }
                 }
                 p{
@@ -87,3 +87,5 @@
             }
         }
     }
+}
+
