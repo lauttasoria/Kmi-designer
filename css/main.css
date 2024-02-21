@@ -79,17 +79,6 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*
-  .bienvenida{
-      h1{
-          color: $color-principal;
-          font-size: 30px;
-          font-weight: bold;
-          font-family: $letra-general;
-          cursor: default;
-          margin: 40px auto 0;
-      }
-  }*/
 }
 .main-inicio .contenedor-inicio .logo {
   width: 300px;
@@ -126,6 +115,30 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   background: -webkit-linear-gradient(100deg, hsl(292, 93%, 27%), hsl(0, 0%, 100%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.main-inicio .contenedor-cuadro {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 3rem;
+  padding: 15px;
+}
+.main-inicio .contenedor-cuadro h1 {
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+.main-inicio .contenedor-cuadro .icono {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(148, 77, 193);
 }
 
 /*servicios*/
