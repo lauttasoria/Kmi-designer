@@ -36,26 +36,27 @@
                 object-fit: cover;
             }
             .servicio-texto{
+                margin-top: 5px;
                 padding: 15px;
                 text-align: center;
                 
                 p{
                     line-height: 1.5;
                     color: #ffffff;
+                    padding: 5px;
                 }
                 h3{
                     font-weight: 400;
-                    margin-bottom: 15px;
-                    margin-top: auto;
+                    padding: 10px;
+                    margin-top: 5px;
                     font-family: 'Poppins', sans-serif;
                     color: #ffffff;
                 }
                 a {
                     text-decoration: none;
                     display:inline-block;
-                    padding: 10px;                    
-                    margin-top: 10px;
-                    align-items: end;
+                    padding: 5px;                    
+                    margin-bottom: 5px;
                     color: map-get($map: $boton-primario, $key: color-primario) ;
                     border: map-get($map: $boton-primario, $key: border-primario);
                     border-radius: 4px;
