@@ -3,37 +3,30 @@
     .contenedor-inicio{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         .logo{
-            max-width: 320px;
-            margin-bottom: 20px;
-            margin-right: 60px;
-            margin-left: 60px;
-            margin-top: 100px;
+            width: 300px;
+            margin: 80px auto 0;
+            align-items: center;
         }
         .frase{
-            width: 350px;
-            height: 160px;
+            width: 300px;
+            margin: 60px auto 0;
             overflow: hidden;
             cursor: default;
             color: white;
-            font-size:17px;
-            margin-right: 20px;
-            margin-left: 20px;
-            margin-top: 30px;
+            font-size:12px;
             text-align: center;
+            align-items: center;
         }
         .bienvenida{
             h1{
                 color: $color-principal;
-                font-size: 40px;
-                border-radius: 10px;
+                font-size: 30px;
                 font-weight: bold;
                 font-family: $letra-general;
                 cursor: default;
-                margin-right: 3rem;
-                margin-bottom: 30px;
-                margin-top: 30px;
+                margin: 40px auto 0;
             }
         }
     }
