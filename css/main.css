@@ -32,12 +32,6 @@ body.contacto, .galeria, .servicios, .catalogo {
   font-family: "Poppins", sans-serif;
 }
 
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form h3 {
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
-}
-
 /*header*/
 header {
   display: flex;
@@ -239,7 +233,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 
 /*contacto*/
-.main-contacto h2 {
+.main-contacto h1 {
   color: rgb(148, 77, 193);
   text-align: center;
   text-transform: uppercase;
@@ -254,77 +248,93 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   font-size: 36px;*/
 }
 .main-contacto .contenedor-contacto {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*.contacto-info{
+          background: $color-principal;
+          h4{
+              text-align: center;
+              margin: 5px;
+              padding: 10px;
+          }
+          ul{
+              text-align: center;
+              margin: 0 0 1rem 0;
+              list-style: none;
+              padding: 10px;
+              li{
+                  text-align: center;
+                  margin: 0 0 1rem 0;
+                  padding: .2em;
+                  line-height: 30px ;
+                  font-size:13px;
+                  letter-spacing: 1px;
+              }
+          }
+          p{
+              text-align: center;
+              margin: 0 0 1rem 0;
+          }
+      }
+  }*/
 }
-.main-contacto .contenedor-contacto .contacto-wrapper {
-  box-shadow: 0 0 20px 5px rgba(161, 160, 160, 0.3);
+.main-contacto .contenedor-contacto form {
+  padding: 20px;
+  background-color: rgb(54, 53, 53);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(253, 252, 252, 0.2);
+  width: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form {
-  background: #353535;
-}
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form {
+.main-contacto .contenedor-contacto form .form-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario {
-  margin: 0;
-  padding: 2em;
+.main-contacto .contenedor-contacto form .form-group .formulario {
+  display: flex;
+  flex-direction: column;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario .msj, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario .boton {
-  grid-column: 1/2;
+.main-contacto .contenedor-contacto form .form-group .formulario label {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin-bottom: 10px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario input,
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario textarea,
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button {
-  width: 100%;
-  padding: 0.7em;
-  border: none;
-  background: none;
-  border-bottom: 1px solid #8f29fc;
-  outline: 0;
+.main-contacto .contenedor-contacto form label {
   color: white;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button {
-  background: rgb(148, 77, 193);
+.main-contacto .contenedor-contacto form input, .main-contacto .contenedor-contacto form textarea {
+  padding: 15px 15px;
+  background-color: rgb(245, 151, 234);
   border: 0;
-  text-transform: uppercase;
-  padding: 1em;
+  border-radius: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:hover, .main-contacto .contenedor-contacto .contacto-wrapper .contact-form form .formulario button:focus {
-  background: #8f29fc;
-  color: #000000;
-  transition: background-color 1s ease-out;
-  outline: 0;
+.main-contacto .contenedor-contacto form::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info {
-  background: rgb(148, 77, 193);
+.main-contacto .contenedor-contacto form textarea {
+  margin-bottom: 30px;
 }
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info h4 {
-  text-align: center;
-  margin: 5px;
-  padding: 10px;
-}
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  list-style: none;
-  padding: 10px;
-}
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info ul li {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  padding: 0.2em;
-  line-height: 30px;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-.main-contacto .contenedor-contacto .contacto-wrapper .contacto-info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
+.main-contacto .contenedor-contacto form .btn {
+  padding: 17px 15px;
+  width: 180px;
+  align-self: center;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+  cursor: pointer;
+  background-color: rgb(181, 66, 171);
 }
 
 /*catalogo*/
@@ -495,7 +505,7 @@ footer .contenedor-01 p .final {
     -webkit-text-fill-color: transparent;
   }
   .main-inicio h1 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     margin-top: 5px;
     font-family: "Poppins", sans-serif;
@@ -612,11 +622,15 @@ footer .contenedor-01 p .final {
     width: 450px;
     height: auto;
   }
-  /*contacto*/
-  .main-contacto .contenedor-contacto .contacto-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
+  /*contacto
+  .main-contacto{
+      .contenedor-contacto{
+          .contacto-wrapper{
+              display: grid;
+              grid-template-columns: 2fr 1fr;
+          }
+      }
+  }*/
 }
 @media screen and (min-width: 1024px) {
   /*index*/
@@ -768,11 +782,15 @@ footer .contenedor-01 p .final {
     width: 550px;
     height: auto;
   }
-  /*contacto*/
-  .main-contacto .contenedor-contacto .contacto-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
+  /*contacto
+  .main-contacto{
+      .contenedor-contacto{
+          .contacto-wrapper{
+              display: grid;
+              grid-template-columns: 2fr 1fr;
+              }
+          }
+      }*/
 }
 
 /*# sourceMappingURL=main.css.map */

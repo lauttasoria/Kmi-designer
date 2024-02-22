@@ -1,6 +1,6 @@
 /*contacto*/
 .main-contacto{
-    h2{
+    h1{
         @include titulo(center, uppercase, none, 40px 10px, 36px);
         /*color: $color-principal;
         text-align: center;
@@ -10,56 +10,70 @@
         font-size: 36px;*/
     }
     .contenedor-contacto{
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2em;
-        color: white;
-        
-        .contacto-wrapper{
-            box-shadow: 0 0 20px 5px rgba(161, 160, 160, 0.3);
-            .contact-form{
-                background: #353535;
-                h3{
-                    @extend %estilos;
-                }
-                form{
-                    display:grid ;
-                    grid-template-columns: 1fr 1fr;
-                    .formulario{
-                        margin: 0;
-                        padding: 2em;
-                        .msj, .boton{
-                            grid-column: 1 / 2;
-                        }
-                        input,
-                        textarea,
-                        button{
-                            width: 100%;
-                            padding: .7em;
-                            border: none;
-                            background: none;
-                            border-bottom: 1px solid #8f29fc;
-                            outline: 0;
-                            color: white;
-                        }
-                        button{
-                            background: $color-principal;
-                            border: 0;
-                            text-transform: uppercase;
-                            padding: 1em;
-                            &:hover,
-                            &:focus{
-                                background: nth($list: $colores, $n: 3);
-                                color: nth($list: $colores, $n: 4);
-                                transition: background-color 1s ease-out;
-                                outline: 0;
-                            }
-                        }
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        form{
+            padding: 20px;
+            background-color: rgb(54, 53, 53);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(253, 252, 252, 0.2);
+            width: 900px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            .form-group{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 30px;
+                margin-bottom: 10px;
+                .formulario{
+                    display:flex;
+                    flex-direction: column;
+                    label{
+                        color: rgb(255, 255, 255);
+                        font-size: 15px;
+                        margin-bottom: 10px
                     }
                 }
             }
-            .contacto-info{
+            label{
+                color: white;
+            }
+            input, textarea{
+                padding:15px 15px ;
+                background-color: rgb(245, 151, 234);
+                border: 0;
+                border-radius: 20px;
+                outline: none;
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+            }
+            &::placeholder{
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+            }
+            textarea{
+                margin-bottom: 30px;
+            }
+            
+            .btn{
+                padding: 17px 15px;
+                width: 180px;
+                align-self: center;
+                text-transform: capitalize;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+                cursor: pointer;
+                background-color: rgb(181, 66, 171);
+            }
+            
+        }
+        
+            /*.contacto-info{
                 background: $color-principal;
                 h4{
                     text-align: center;
@@ -85,7 +99,6 @@
                     margin: 0 0 1rem 0;
                 }
             }
-        }
+        }*/
     }
 }
-
