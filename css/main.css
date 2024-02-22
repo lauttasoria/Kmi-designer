@@ -252,49 +252,23 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  /*.contacto-info{
-          background: $color-principal;
-          h4{
-              text-align: center;
-              margin: 5px;
-              padding: 10px;
-          }
-          ul{
-              text-align: center;
-              margin: 0 0 1rem 0;
-              list-style: none;
-              padding: 10px;
-              li{
-                  text-align: center;
-                  margin: 0 0 1rem 0;
-                  padding: .2em;
-                  line-height: 30px ;
-                  font-size:13px;
-                  letter-spacing: 1px;
-              }
-          }
-          p{
-              text-align: center;
-              margin: 0 0 1rem 0;
-          }
-      }
-  }*/
+  min-height: 40vh;
+  padding: 30px;
 }
 .main-contacto .contenedor-contacto form {
-  padding: 20px;
-  background-color: rgb(54, 53, 53);
+  padding: 15px;
+  background-color: rgba(117, 117, 117, 0.591);
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(253, 252, 252, 0.2);
-  width: 900px;
+  box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
+  width: auto;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 .main-contacto .contenedor-contacto form .form-group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
   margin-bottom: 10px;
 }
 .main-contacto .contenedor-contacto form .form-group .formulario {
@@ -303,35 +277,35 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 .main-contacto .contenedor-contacto form .form-group .formulario label {
   color: rgb(255, 255, 255);
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 .main-contacto .contenedor-contacto form label {
   color: white;
 }
 .main-contacto .contenedor-contacto form input, .main-contacto .contenedor-contacto form textarea {
-  padding: 15px 15px;
-  background-color: rgb(245, 151, 234);
+  padding: 12px 12px;
+  background-color: rgb(148, 77, 193);
   border: 0;
-  border-radius: 20px;
+  border-radius: 16px;
   outline: none;
   color: rgb(0, 0, 0);
-  font-size: 16px;
+  font-size: 13px;
 }
-.main-contacto .contenedor-contacto form::placeholder {
+.main-contacto .contenedor-contacto form ::placeholder {
   color: rgb(0, 0, 0);
   font-size: 16px;
 }
 .main-contacto .contenedor-contacto form textarea {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main-contacto .contenedor-contacto form .btn {
-  padding: 17px 15px;
-  width: 180px;
+  padding: 15px 15px;
+  width: 130px;
   align-self: center;
   text-transform: capitalize;
   color: rgb(0, 0, 0);
-  font-size: 15px;
+  font-size: 16px;
   box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
   cursor: pointer;
   background-color: rgb(181, 66, 171);
@@ -622,15 +596,70 @@ footer .contenedor-01 p .final {
     width: 450px;
     height: auto;
   }
-  /*contacto
-  .main-contacto{
-      .contenedor-contacto{
-          .contacto-wrapper{
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-          }
-      }
-  }*/
+  /*contacto*/
+  .main-contacto .contenedor-contacto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 40px;
+  }
+  .main-contacto .contenedor-contacto form {
+    padding: 18px;
+    background-color: rgba(117, 117, 117, 0.591);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
+    width: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto form .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-bottom: 10px;
+  }
+  .main-contacto .contenedor-contacto form .form-group .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto form .form-group .formulario label {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .main-contacto .contenedor-contacto form label {
+    color: white;
+  }
+  .main-contacto .contenedor-contacto form input, .main-contacto .contenedor-contacto form textarea {
+    padding: 13px 13px;
+    background-color: rgb(148, 77, 193);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+  .main-contacto .contenedor-contacto form ::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+  .main-contacto .contenedor-contacto form textarea {
+    margin-bottom: 25px;
+  }
+  .main-contacto .contenedor-contacto form .btn {
+    padding: 15px 15px;
+    width: 150px;
+    align-self: center;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+    cursor: pointer;
+    background-color: rgb(181, 66, 171);
+  }
 }
 @media screen and (min-width: 1024px) {
   /*index*/
@@ -782,15 +811,70 @@ footer .contenedor-01 p .final {
     width: 550px;
     height: auto;
   }
-  /*contacto
-  .main-contacto{
-      .contenedor-contacto{
-          .contacto-wrapper{
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              }
-          }
-      }*/
+  /*contacto*/
+  .main-contacto .contenedor-contacto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 40px;
+  }
+  .main-contacto .contenedor-contacto form {
+    padding: 20px;
+    background-color: rgba(117, 117, 117, 0.591);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
+    width: 1000px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto form .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 15px;
+  }
+  .main-contacto .contenedor-contacto form .form-group .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto .contenedor-contacto form .form-group .formulario label {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .main-contacto .contenedor-contacto form label {
+    color: white;
+  }
+  .main-contacto .contenedor-contacto form input, .main-contacto .contenedor-contacto form textarea {
+    padding: 15px 15px;
+    background-color: rgb(148, 77, 193);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+  .main-contacto .contenedor-contacto form ::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+  .main-contacto .contenedor-contacto form textarea {
+    margin-bottom: 30px;
+  }
+  .main-contacto .contenedor-contacto form .btn {
+    padding: 17px 15px;
+    width: 180px;
+    align-self: center;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+    cursor: pointer;
+    background-color: rgb(181, 66, 171);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

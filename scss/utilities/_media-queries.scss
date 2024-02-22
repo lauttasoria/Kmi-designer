@@ -169,15 +169,74 @@
             }
         }
     }
-    /*contacto
+    /*contacto*/
     .main-contacto{
         .contenedor-contacto{
-            .contacto-wrapper{
-                display: grid;
-                grid-template-columns: 2fr 1fr;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            padding: 40px;
+            form{
+                padding: 18px;
+                background-color:  rgba(117, 117, 117, 0.591);
+                border-radius: 8px;
+                box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
+                width: auto;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                .form-group{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-gap: 25px;
+                    margin-bottom: 10px;
+                    .formulario{
+                        display:flex;
+                        flex-direction: column;
+                        label{
+                            color: rgb(255, 255, 255);
+                            font-size: 15px;
+                            margin-bottom: 10px
+                        }
+                    }
+                }
+                label{
+                    color: white;
+                }
+                input, textarea{
+                    padding:13px 13px ;
+                    background-color:$color-principal;
+                    border: 0;
+                    border-radius: 20px;
+                    outline: none;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                }
+                ::placeholder{
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                }
+                textarea{
+                    margin-bottom: 25px;
+                }
+                
+                .btn{
+                    padding: 15px 15px;
+                    width: 150px;
+                    align-self: center;
+                    text-transform: capitalize;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+                    cursor: pointer;
+                    background-color: rgb(181, 66, 171);
+                }
+                
             }
         }
-    }*/
+    }
 
 }
 
@@ -341,13 +400,72 @@
             }
         }
     }
-    /*contacto
+    /*contacto*/
     .main-contacto{
         .contenedor-contacto{
-            .contacto-wrapper{
-                display: grid;
-                grid-template-columns: 2fr 1fr;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 40px;
+            form{
+                padding: 20px;
+                background-color:  rgba(117, 117, 117, 0.591);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
+                width: 1000px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                .form-group{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-gap: 30px;
+                    margin-bottom: 15px;
+                    .formulario{
+                        display:flex;
+                        flex-direction: column;
+                        label{
+                            color: rgb(255, 255, 255);
+                            font-size: 15px;
+                            margin-bottom: 10px
+                        }
+                    }
                 }
+                label{
+                    color: white;
+                }
+                input, textarea{
+                    padding:15px 15px ;
+                    background-color:$color-principal;
+                    border: 0;
+                    border-radius: 20px;
+                    outline: none;
+                    color: rgb(0, 0, 0);
+                    font-size: 15px;
+                }
+                ::placeholder{
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                }
+                textarea{
+                    margin-bottom: 30px;
+                }
+                
+                .btn{
+                    padding: 17px 15px;
+                    width: 180px;
+                    align-self: center;
+                    text-transform: capitalize;
+                    color: rgb(0, 0, 0);
+                    font-size: 16px;
+                    box-shadow: 0 0 20px rgba(178, 174, 174, 0.607);
+                    cursor: pointer;
+                    background-color: rgb(181, 66, 171);
+                }
+                
             }
-        }*/
+        }
+    }
 }
