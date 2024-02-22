@@ -14,11 +14,11 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         margin: 3rem;
-        padding: 15px;
+        
         .servicio{
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: auto;
             height: 490px;
             border-radius: 6px;
             overflow: hidden;
@@ -37,13 +37,12 @@
             }
             .servicio-texto{
                 margin-top: 5px;
-                padding: 15px;
+                padding: 10px;
                 text-align: center;
-                
                 p{
-                    line-height: 1.5;
+                    line-height: 1.0;
                     color: #ffffff;
-                    padding: 5px;
+                    font-size: 15px;
                 }
                 h3{
                     font-weight: 400;
@@ -55,6 +54,7 @@
                 a {
                     text-decoration: none;
                     display:inline-block;
+                    justify-content: end;
                     padding: 5px;                    
                     margin-bottom: 5px;
                     color: map-get($map: $boton-primario, $key: color-primario) ;
