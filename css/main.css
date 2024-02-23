@@ -148,6 +148,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   height: 100%;
   object-fit: cover;
   text-align: center;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.808));
 }
 .main-inicio .contenedor-cuadro .iconos h2 {
   padding: 5px;
