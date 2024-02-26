@@ -313,7 +313,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
 }
 
 /*catalogo*/
-.main-catalogo h2 {
+.main-catalogo h1 {
   color: rgb(148, 77, 193);
   text-align: center;
   text-transform: uppercase;
@@ -327,24 +327,36 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   margin:40px 0px;
   font-size: 36px;*/
 }
-.main-catalogo .carousel {
-  width: 300px;
-  height: auto;
-  margin: 50px auto 0;
-  padding: 15px;
-  overflow: hidden;
-  justify-items: center;
-  flex-direction: column;
+.main-catalogo .mySwiper {
+  width: 100%;
+  padding: 50px 0 50px 0;
 }
-.main-catalogo .carousel:hover {
-  width: 350px;
-  height: auto;
-}
-.main-catalogo .carousel h3 {
-  font-size: 20px;
+.main-catalogo .mySwiper .swiper-wrapper .swiper-slide {
+  width: 400px;
+  height: 600px;
+  background-color: #323232;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
   text-align: center;
-  color: rgb(255, 255, 255);
-  margin: 40px 10px;
+}
+.main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons i {
+  font-size: 20px;
+  color: white;
+}
+.main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons img {
+  width: 200px;
+  justify-content: center;
+}
+.main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
 }
 
 /*galeria*/
