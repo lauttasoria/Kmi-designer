@@ -10,7 +10,7 @@
         font-size: 36px;*/
     }
     .mySwiper{
-        width: 100%;
+        width: auto;
         padding: 50px 0 50px 0;
         .swiper-wrapper{
             .swiper-slide{
@@ -20,8 +20,10 @@
                 box-shadow:  0 0 20px rgba(0, 0, 0, 0.4);
                 padding: 40px;
                 text-align: center;
+                display: flex;
+                justify-content: center;
                 .icons{
-                    display: inline;
+                    display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 40px;
@@ -30,17 +32,9 @@
                         color:white;
                     }
                     img{
-                        width: 270px;
+                        width: 280px;
                         justify-content: center;
                         text-align: center;
-                    }
-                    h2{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content:end;
-                        font-size: 15px;
-                        margin-top: 15px;
-                        color: #d11ff9;
                     }
                 }
             }

@@ -155,20 +155,7 @@
         }
     }
     /*catalogo*/
-    .main-catalogo{    
-        .carousel {
-        width:400px;
-        height: auto;
-        margin: 50px auto 0;
-        overflow: hidden;
-        justify-items: center;
-        flex-direction: column;
-            &:hover{
-                width: 450px;
-                height: auto;
-            }
-        }
-    }
+
     /*contacto*/
     .main-contacto{
         .contenedor-contacto{
