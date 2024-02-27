@@ -21,8 +21,8 @@
                 padding: 40px;
                 text-align: center;
                 .icons{
-                    display: flex;
-                    justify-content:center;
+                    display: inline;
+                    justify-content: space-between;
                     align-items: center;
                     margin-bottom: 40px;
                     i{
@@ -30,13 +30,17 @@
                         color:white;
                     }
                     img{
-                        width: 200px;
+                        width: 270px;
                         justify-content: center;
+                        text-align: center;
                     }
                     h2{
                         display: flex;
-                        justify-content: center;
+                        flex-direction: column;
+                        justify-content:end;
                         font-size: 15px;
+                        margin-top: 15px;
+                        color: #d11ff9;
                     }
                 }
             }

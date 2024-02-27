@@ -340,8 +340,8 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   text-align: center;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons {
-  display: flex;
-  justify-content: center;
+  display: inline;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -350,13 +350,17 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: white;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons img {
-  width: 200px;
+  width: 270px;
   justify-content: center;
+  text-align: center;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons h2 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
   font-size: 15px;
+  margin-top: 15px;
+  color: #d11ff9;
 }
 
 /*galeria*/
