@@ -328,18 +328,26 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   font-size: 36px;*/
 }
 .main-catalogo .mySwiper {
-  width: auto;
-  padding: 50px 0 50px 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.main-catalogo .mySwiper .swiper-wrapper {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide {
-  width: 400px;
-  height: 600px;
+  width: auto;
+  height: 550px;
   background-color: #323232;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  padding: 40px;
+  box-shadow: 0 0 20px rgba(238, 238, 238, 0.4);
+  padding: 20px;
   text-align: center;
-  display: flex;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons {
   display: flex;
@@ -352,6 +360,7 @@ header .navbar-nav .nav-link.active div .container-fluid .menu-button div .menu 
   color: white;
 }
 .main-catalogo .mySwiper .swiper-wrapper .swiper-slide .icons img {
+  display: flex;
   width: 280px;
   justify-content: center;
   text-align: center;
