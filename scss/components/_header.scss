@@ -5,47 +5,65 @@ header {
     justify-content: flex-start;
     align-items: first flex-start;
     padding: 50px;
-    .navbar-brand{
-        font-weight: 100;
-        color: #f700ff;
-        font-size: 30px;
-        cursor: default;
-        &:hover{
-            transition: 0.5s;
-            color: rgb(255, 255, 255);
+    .navbar{
+        background-color: rgba(255, 255, 255, 0.693);
+        padding: 0.5rem;
+        height: 80px;
+        margin: 20px;
+        border-radius: 16px;
+        .navbar-brand{
+            font-weight: 200;
+            color: #f700ff;
+            font-size: 30px;
+            cursor: default;
             b{
-                color: rgb(165, 25, 119);
+                font-weight: 200;
+            }
+            &:hover{
                 transition: 0.5s;
+                color: #000000;
+                font-weight: 600;
+                b{
+                    color: #A816FA;
+                    transition: 0.5s;
+                    font-weight: 600;
+                }
             }
         }
-    }
-    .navbar-toggler{
-        border: none;
-        padding-right: 15px;
-        font-size: 20px;
-        background-color: rgba(217, 133, 241, 0.745);
-        &:focus{
-            box-shadow: none;
-            outline: none;
+        .navbar-toggler{
+            border: none;
+            font-size: 20px;
+            background-color: #f700ff00;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+            &:hover{
+                background-color: rgb(197, 36, 242);
+                color: black;
+            }
         }
-        &:hover{
-            background-color: rgb(214, 65, 255);
-            color: black;
+        .navbar-nav .nav-link.active{
+            color:  #f700ff ;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 15px;
+            &:hover{
+                color:  #ffffff;
+                font-size: 25px;
+                transition: 0.4s;
+                -webkit-text-stroke: 0.5px black
+            }
         }
-    }
-    .navbar-nav .nav-link.active{
-        color:  #f700ff ;
-        font-weight: 600;
-        font-size: 20px;
-        padding: 15px;
-        &:hover{
-            color:  #ffffff;
-            font-size: 25px;
-            transition: 0.4s;
-            -webkit-text-stroke: 0.5px black
+        .offcanvas{
+        background-color: rgba(88, 69, 94, 0.726);
+        h5{
+            color: white;
+        }
         }
     }
 }
+
 
 
 

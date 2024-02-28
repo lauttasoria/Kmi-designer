@@ -36,45 +36,62 @@ header {
   align-items: first flex-start;
   padding: 50px;
 }
-header .navbar-brand {
-  font-weight: 100;
+header .navbar {
+  background-color: rgba(255, 255, 255, 0.693);
+  padding: 0.5rem;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+}
+header .navbar .navbar-brand {
+  font-weight: 200;
   color: #f700ff;
   font-size: 30px;
   cursor: default;
 }
-header .navbar-brand:hover {
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
+header .navbar .navbar-brand b {
+  font-weight: 200;
 }
-header .navbar-brand:hover b {
-  color: rgb(165, 25, 119);
+header .navbar .navbar-brand:hover {
   transition: 0.5s;
+  color: #000000;
+  font-weight: 600;
 }
-header .navbar-toggler {
+header .navbar .navbar-brand:hover b {
+  color: #A816FA;
+  transition: 0.5s;
+  font-weight: 600;
+}
+header .navbar .navbar-toggler {
   border: none;
-  padding-right: 15px;
   font-size: 20px;
-  background-color: rgba(217, 133, 241, 0.745);
+  background-color: rgba(247, 0, 255, 0);
 }
-header .navbar-toggler:focus {
+header .navbar .navbar-toggler:focus {
   box-shadow: none;
   outline: none;
 }
-header .navbar-toggler:hover {
-  background-color: rgb(214, 65, 255);
+header .navbar .navbar-toggler:hover {
+  background-color: rgb(197, 36, 242);
   color: black;
 }
-header .navbar-nav .nav-link.active {
+header .navbar .navbar-nav .nav-link.active {
   color: #f700ff;
   font-weight: 600;
   font-size: 20px;
   padding: 15px;
 }
-header .navbar-nav .nav-link.active:hover {
+header .navbar .navbar-nav .nav-link.active:hover {
   color: #ffffff;
   font-size: 25px;
   transition: 0.4s;
   -webkit-text-stroke: 0.5px black;
+}
+header .navbar .offcanvas {
+  background-color: rgba(88, 69, 94, 0.726);
+}
+header .navbar .offcanvas h5 {
+  color: white;
 }
 
 /*header {
@@ -315,7 +332,7 @@ header .navbar-nav .nav-link.active:hover {
 }
 .main-contacto .contenedor-contacto form {
   padding: 15px;
-  background-color: rgba(117, 117, 117, 0.591);
+  background-color: rgba(44, 26, 72, 0.697);
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
   width: auto;
@@ -725,7 +742,7 @@ footer .contenedor-01 p .final {
   }
   .main-contacto .contenedor-contacto form {
     padding: 18px;
-    background-color: rgba(117, 117, 117, 0.591);
+    background-color: rgba(44, 26, 72, 0.697);
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
     width: auto;
@@ -980,7 +997,7 @@ footer .contenedor-01 p .final {
   }
   .main-contacto .contenedor-contacto form {
     padding: 20px;
-    background-color: rgba(117, 117, 117, 0.591);
+    background-color: rgba(44, 26, 72, 0.516);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(253, 252, 252, 0.456);
     width: 1000px;
