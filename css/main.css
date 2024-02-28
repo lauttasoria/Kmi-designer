@@ -8,7 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -21,7 +20,6 @@ body.inicio {
   background-color: rgb(39, 12, 83);
   background-position: right;
   background-attachment: fixed;
-  font-family: "Poppins", sans-serif;
 }
 
 body.contacto, .galeria, .servicios, .catalogo {
@@ -29,7 +27,6 @@ body.contacto, .galeria, .servicios, .catalogo {
   background-size: 100% 110%;
   background-position: center center;
   background-attachment: fixed;
-  font-family: "Poppins", sans-serif;
 }
 
 /*header*/
@@ -71,7 +68,7 @@ header .navbar-nav .nav-link.active {
   color: #f700ff;
   font-weight: 600;
   font-size: 20px;
-  padding: 11px;
+  padding: 15px;
 }
 header .navbar-nav .nav-link.active:hover {
   color: #ffffff;
@@ -216,7 +213,7 @@ header .navbar-nav .nav-link.active:hover {
 }
 
 /*servicios*/
-.main-servicios h2 {
+.main-servicios h1 {
   color: rgb(148, 77, 193);
   text-align: center;
   text-transform: uppercase;
@@ -291,6 +288,9 @@ header .navbar-nav .nav-link.active:hover {
 }
 
 /*contacto*/
+.main-contacto {
+  font-weight: 100;
+}
 .main-contacto h1 {
   color: rgb(148, 77, 193);
   text-align: center;
@@ -424,7 +424,7 @@ header .navbar-nav .nav-link.active:hover {
 }
 
 /*galeria*/
-.main-galeria h2 {
+.main-galeria h1 {
   color: rgb(148, 77, 193);
   text-align: center;
   text-transform: uppercase;

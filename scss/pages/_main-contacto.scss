@@ -1,5 +1,6 @@
 /*contacto*/
 .main-contacto{
+    font-weight: 100;
     h1{
         @include titulo(center, uppercase, none, 40px 10px, 36px);
         /*color: $color-principal;

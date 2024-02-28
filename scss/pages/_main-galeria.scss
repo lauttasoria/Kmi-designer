@@ -1,6 +1,6 @@
 /*galeria*/
 .main-galeria{
-    h2{
+    h1{
         @include titulo(center, uppercase, none, 40px 10px, 36px);
         /*color: $color-principal;
         text-align: center;
