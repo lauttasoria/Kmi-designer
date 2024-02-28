@@ -1,7 +1,55 @@
 //comentario en scss
 /*header*/
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: first flex-start;
+    padding: 50px;
+    .navbar-brand{
+        font-weight: 100;
+        color: #f700ff;
+        font-size: 30px;
+        cursor: default;
+        &:hover{
+            transition: 0.5s;
+            color: rgb(255, 255, 255);
+            b{
+                color: rgb(165, 25, 119);
+                transition: 0.5s;
+            }
+        }
+    }
+    .navbar-toggler{
+        border: none;
+        padding-right: 15px;
+        font-size: 20px;
+        background-color: rgba(217, 133, 241, 0.745);
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+        &:hover{
+            background-color: rgb(214, 65, 255);
+            color: black;
+        }
+    }
+    .navbar-nav .nav-link.active{
+        color:  #f700ff ;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 11px;
+        &:hover{
+            color:  #ffffff;
+            font-size: 25px;
+            transition: 0.4s;
+            -webkit-text-stroke: 1px black
+        }
+    }
+}
 
-    header {
+
+
+    /*header {
     display: flex;
     justify-content: flex-start;
     align-items: first flex-start;
@@ -11,25 +59,25 @@
         font-weight:lighter;
         
         &:hover{
-            background-color:  #fdfbfb;
-            border-radius: 3rem;
-            transform: none;
-            transition: none;
+            background-color:  #ffffff;
+            border-radius: 20px;
             }
-        div .container-fluid{
-            .menu-button{
-                span .navbar-toggler-icon, .menu-icon {
-                    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-                    font-size: var(--bs-navbar-toggler-font-size);
-                    line-height: 2;
-                    color: #f7f7f7;
-                    background-color: #f700ff;
-                    border: 1px solid white;
-                    border-radius: var(--bs-navbar-toggler-border-radius);
-                    &:focus{
-                        box-shadow: #f700ff;
-                        }
-                    }
+        .container-fluid{
+            a{
+                img{
+                    width: 20px;
+                }
+            }
+            .navbar-toggler{
+                padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+                font-size: var(--bs-navbar-toggler-font-size);
+                line-height: 1;
+                color: #f700ff;
+                background-color: #f700ff;
+                border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+                border-radius: var(--bs-navbar-toggler-border-radius);
+                transition: var(--bs-navbar-toggler-transition);
+                }
                 div .menu{
                     ul{
                         li{
@@ -45,5 +93,5 @@
                 }
             }
         }
-    }
+*/
     
